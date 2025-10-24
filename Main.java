@@ -40,5 +40,9 @@ public class Main {
         Warior.className = "Warior";
         Warior.characterName = "King Arthur";
         Warior.FindCharacteristicsModifiers();
+        System.out.println("Настало время машинки из 4 задания");
+        Car Sonata = new Car("Hyundai Sonata", 2022);
+        System.out.println("Создана машина: " + Sonata.getModel()+ " " + Sonata.getYear());
+        Sonata.MakeBeBe();
     }
 }
