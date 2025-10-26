@@ -2,6 +2,8 @@
 //Описанный ниже код представляет собой маленький кусочек из игровой механики:
 //определяет значения модификатора характеристи по правилам заложенным в данной системе НРИ
 
+import java.util.Scanner;
+
 class Character{
     String className;
     String characterName;
@@ -44,5 +46,28 @@ public class Main {
         Car Sonata = new Car("Hyundai Sonata", 2022);
         System.out.println("Создана машина: " + Sonata.getModel()+ " " + Sonata.getYear());
         Sonata.MakeBeBe();
+        System.out.println("Приактическое задание 5:");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите сумму вклада: ");
+        float summ = scanner.nextFloat();
+        System.out.println("Введите количество месяцев: ");
+        int months = scanner.nextInt();
+        System.out.println("Вклад на сумму "+summ+" на " + months + " месяцев");
+        System.out.format("Финальная сумма вклада через цикл FOR: %.2f", FinalSummFOR(summ, months));
+        System.out.format("\nФинальная сумма вклада через цикл WHILE: %.2f", FinalSummWHILE(summ, months));
+    }
+    static float FinalSummFOR(float s, int m){
+        for (int i=0; i<m; i++){
+            s = (float) (s * 1.07);
+        }
+        return s;
+    }
+    static float FinalSummWHILE(float s, int m){
+        int i=0;
+        while(i<m){
+            s = (float) (s * 1.07);
+            i++;
+        }
+        return s;
     }
 }
