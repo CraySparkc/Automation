@@ -55,6 +55,16 @@ public class Main {
         System.out.println("Вклад на сумму "+summ+" на " + months + " месяцев");
         System.out.format("Финальная сумма вклада через цикл FOR: %.2f", FinalSummFOR(summ, months));
         System.out.format("\nФинальная сумма вклада через цикл WHILE: %.2f", FinalSummWHILE(summ, months));
+        System.out.println("Приактическое задание 6:");
+        String[] stringArray = new String[]{"привет", "ПОКА", "гипербола"};
+        System.out.println("Первая строка в верхнем регистре");
+        System.out.println(stringArray[0].toUpperCase());
+        System.out.println("Вторая строка в нижнем регистре");
+        System.out.println(stringArray[1].toLowerCase());
+        System.out.println("Вывести из массива третью строку, в которой третья буква будет «О», а между третьей и четвертой буквой будет «пробел»");
+        //гиО ербола
+        String result = stringArray[2].substring(0,2) + stringArray[1].charAt(stringArray[1].indexOf("О")) + " " + stringArray[2].substring(3);
+        System.out.println(result);
     }
     static float FinalSummFOR(float s, int m){
         for (int i=0; i<m; i++){
