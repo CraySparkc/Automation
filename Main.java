@@ -73,6 +73,10 @@ public class Main {
         Rectangle r = new Rectangle();
         c.draw();
         r.draw();
+        Guitar guitar = new Guitar("Yamaha FGX5");
+        Piano piano = new Piano("YAMAHA M3 SM");
+        guitar.playWithEnum();
+        piano.playWithEnum();
     }
     static float FinalSummFOR(float s, int m){
         for (int i=0; i<m; i++){
