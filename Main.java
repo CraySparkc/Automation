@@ -65,6 +65,14 @@ public class Main {
         //гиО ербола
         String result = stringArray[2].substring(0,2) + stringArray[1].charAt(stringArray[1].indexOf("О")) + " " + stringArray[2].substring(3);
         System.out.println(result);
+        Manager ivan = new Manager("Иван", 200000);
+        Developer denis = new Developer("Денис", 250000);
+        ivan.work();
+        denis.work();
+        Circle c = new Circle();
+        Rectangle r = new Rectangle();
+        c.draw();
+        r.draw();
     }
     static float FinalSummFOR(float s, int m){
         for (int i=0; i<m; i++){
