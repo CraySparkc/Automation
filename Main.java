@@ -77,6 +77,9 @@ public class Main {
         Piano piano = new Piano("YAMAHA M3 SM");
         guitar.playWithEnum();
         piano.playWithEnum();
+        RandomString str = new RandomString();
+        System.out.println("Выводим рандомную строку");
+        str.printRandomString();
     }
     static float FinalSummFOR(float s, int m){
         for (int i=0; i<m; i++){
