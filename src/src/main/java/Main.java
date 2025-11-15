@@ -2,6 +2,10 @@
 //Описанный ниже код представляет собой маленький кусочек из игровой механики:
 //определяет значения модификатора характеристи по правилам заложенным в данной системе НРИ
 
+import classes.*;
+import classes.Rectangle;
+
+import java.awt.*;
 import java.util.Scanner;
 
 class Character{
@@ -55,7 +59,7 @@ public class Main {
         System.out.println("Вклад на сумму "+summ+" на " + months + " месяцев");
         System.out.format("Финальная сумма вклада через цикл FOR: %.2f", FinalSummFOR(summ, months));
         System.out.format("\nФинальная сумма вклада через цикл WHILE: %.2f", FinalSummWHILE(summ, months));
-        System.out.println("Приактическое задание 6:");
+        System.out.println("\nПриактическое задание 6:");
         String[] stringArray = new String[]{"привет", "ПОКА", "гипербола"};
         System.out.println("Первая строка в верхнем регистре");
         System.out.println(stringArray[0].toUpperCase());
