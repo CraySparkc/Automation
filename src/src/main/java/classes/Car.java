@@ -1,7 +1,7 @@
+package classes;
+
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.Date;
 
 public class Car {
     private String model;
@@ -11,7 +11,7 @@ public class Car {
         this.model = model;
         this.year = year;
     }
-    void MakeBeBe(){
+    public void MakeBeBe(){
         System.out.println("🚗 " + this.model + " "+ this.year + " : делает УИУИУИ");
     }
 
