@@ -7,9 +7,11 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
+
 public class YandexSearchTest {
 
     @BeforeAll
+    @Tag("one")
     static void setup() {
         Configuration.browser = "chrome";
         Configuration.timeout = 10000;
@@ -23,6 +25,7 @@ public class YandexSearchTest {
 
     @Test
     @DisplayName("Тест по поиску в Яндекс")
+    @Tag("one")
     void SearchTest() {
         step("Открываем браузер на странице Яндекса");
         open("https://ya.ru");
