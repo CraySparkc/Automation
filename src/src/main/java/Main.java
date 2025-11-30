@@ -5,7 +5,7 @@
 import classes.*;
 import classes.Rectangle;
 
-import java.awt.*;
+
 import java.util.Scanner;
 
 class Character{
@@ -84,6 +84,16 @@ public class Main {
         RandomString str = new RandomString();
         System.out.println("Выводим рандомную строку");
         str.printRandomString();
+
+        BoxCollection Boxes = new BoxCollection();
+        Boxes.generateBoxes(10);
+        System.out.println("Сгенирированный массив:");
+        System.out.println(Boxes.getBoxArrayList().toString());
+        Boxes.sortBoxes();
+        System.out.println("Сгенирированный массив после сортировки:");
+        System.out.println(Boxes.getArrayListSortedBelow30().toString());
+        System.out.println("Отсортированный массив:");
+        System.out.println(Boxes.getBoxArrayListSortedOver30().toString());
     }
     static float FinalSummFOR(float s, int m){
         for (int i=0; i<m; i++){
