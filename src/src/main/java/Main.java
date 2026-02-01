@@ -5,7 +5,6 @@
 import classes.*;
 import classes.Rectangle;
 
-
 import java.util.Scanner;
 
 class Character{
